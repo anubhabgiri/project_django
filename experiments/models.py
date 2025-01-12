@@ -11,3 +11,9 @@ class Choice(models.Model):
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
 
+
+class Item(models.Model):
+    catalogue_number = models.CharField(unique=True, max_length=50)
+    name = models.CharField(max_length=300)
+
+

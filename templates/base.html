@@ -1,0 +1,62 @@
+<!-- templates/base.html -->
+{% load static %}  <!-- Add this line to load static files -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    
+    <!-- Add external CSS file -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    
+    <style>
+        /* Add some basic inline styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
+    
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+    <header>
+        <h1>My Website Header</h1>
+    </header>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+
+</body>
+</html>
