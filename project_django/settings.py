@@ -29,8 +29,11 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+"""
+installed apps must be added here for Django to recognize them
+"""
 INSTALLED_APPS = [
+    "experiments.apps.ExperimentsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
