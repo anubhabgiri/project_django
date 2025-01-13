@@ -20,7 +20,7 @@ To migrate the model definitions to the database
 
 `  python manage.py makemigrations <app name> ` This will create the migration files e.g., 0001_initial.py
 
-` python manage.py sqlmigrate experiments 0001` This will actually prepare the SQL statements
+` python manage.py sqlmigrate <app name> 0001` This will actually prepare the SQL statements
 
 ` python manage.py migrate` This will execute the statements
 

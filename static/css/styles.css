@@ -11,3 +11,18 @@ body {
 p {
     color: #666;
 }
+
+#home_banner{
+    background-color: black;
+    color: aqua;
+    text-align: center;
+    margin: auto;
+    min-height: 40vh;
+    width: 100vw;
+    font-size: x-large;
+    align-content: center;
+}
+
+.input_form{
+    margin: auto;
+}
